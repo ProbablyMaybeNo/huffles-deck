@@ -78,15 +78,28 @@
         </div>
       </div>
 
-      <!-- the reveal: apocalyptic readout, adorable cause -->
-      <div style="position:absolute;top:150px;right:80px;width:680px;z-index:5;">
-        <div class="ph dark" style="width:680px;height:560px;">
-          <img class="ph-ico" src="assets/icons/video.png" alt="">
-          <div class="ph-label" style="color:var(--phosphor)">REVEAL &mdash; THE CAUSE OF IT ALL</div>
-          <div class="ph-sub">Extreme close-up of one Huffle: huge wet black eyes, a single confused blink. The &ldquo;DUN-DUN-DUUUN&hellip; oh.&rdquo; beat. (Drop hero still / loop here.)</div>
-          <div class="ph-dims">1080 &times; 900</div>
+      <!-- merged: found-footage media player + exhibits -->
+      <div style="position:absolute;top:118px;right:64px;width:760px;z-index:5;">
+        <div style="border:2px solid var(--phosphor-dim);background:#000;box-shadow:0 0 18px rgba(51,255,102,.12);">
+          <div style="display:flex;align-items:center;gap:8px;padding:5px 10px;background:#08240f;border-bottom:1px solid var(--phosphor-dim);font-family:'VT323';font-size:19px;color:var(--phosphor);letter-spacing:1px;">
+            <img src="assets/icons/video.png" style="width:16px;height:16px;image-rendering:pixelated" alt=""> EXHIBIT 01 &mdash; NEWS_BREAKING_2000.avi
+          </div>
+          <div class="ph dark" style="width:100%;height:432px;border:none;box-shadow:none;">
+            <img class="ph-ico" src="assets/icons/video.png" alt="">
+            <div class="ph-label" style="color:var(--phosphor)">FOUND FOOTAGE &mdash; THE HAPPENING</div>
+            <div class="ph-sub">2000 news montage &middot; CCTV &middot; citizen phone video &rarr; silence on a Huffle close-up.</div>
+            <div class="ph-dims">756 &times; 432</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;padding:8px 10px;background:#08240f;font-family:'VT323';font-size:20px;color:var(--phosphor);">
+            <span>&#9654;</span><span>&#10073;&#10073;</span><span>&#9632;</span>
+            <span style="flex:1;height:8px;border:1px solid var(--phosphor-dim);"></span>
+            <span>00:00 / 02:14</span>
+          </div>
         </div>
-        <div class="amber" style="font-family:'VT323';font-size:30px;text-align:center;margin-top:14px;">
+        <div style="margin-top:12px;font-family:'VT323';font-size:19px;color:var(--phosphor-dim);line-height:1.5;">
+          + CCTV_GASMART_0314 &middot; CITIZEN_PHONE_DRIVEWAY &middot; SUBWAY_TUNNEL_CAM &middot; FREEZER_AISLE_0207
+        </div>
+        <div class="amber" style="font-family:'VT323';font-size:30px;text-align:center;margin-top:10px;">
           The apocalypse, it turned out, was adorable.
         </div>
       </div>
@@ -205,54 +218,7 @@
   </section>
 
   <!-- ============================================================
-       SLIDE 5 — THE HAPPENING (found footage / video exhibits)
-       ============================================================ -->
-  <section class="slide" data-chrome="desktop" data-task="Exhibits — Found Footage">
-    <!-- exhibits list -->
-    <div class="window win" style="left:120px;top:70px;width:560px;height:600px;">
-      <div class="title-bar"><div class="title-bar-text">EXHIBITS &mdash; \VIDEO</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Close"></button></div></div>
-      <div class="menu-strip"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span></div>
-      <div class="window-body" style="height:516px;">
-        <div class="sunken-panel" style="height:100%;padding:8px;font-family:'Courier New',monospace;font-size:15px;">
-          <div style="color:#555;border-bottom:1px solid #ccc;padding-bottom:4px;margin-bottom:6px;">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type&nbsp;&nbsp;&nbsp;&nbsp;Date</div>
-          <div class="flex" style="align-items:center;gap:8px;padding:5px 4px;background:#000080;color:#fff;"><img src="assets/icons/video.png" style="width:20px;height:20px;image-rendering:pixelated"> NEWS_BREAKING_2000.avi</div>
-          <div class="flex" style="align-items:center;gap:8px;padding:5px 4px;"><img src="assets/icons/video.png" style="width:20px;height:20px;image-rendering:pixelated"> CCTV_GASMART_0314.avi</div>
-          <div class="flex" style="align-items:center;gap:8px;padding:5px 4px;"><img src="assets/icons/video.png" style="width:20px;height:20px;image-rendering:pixelated"> CITIZEN_PHONE_DRIVEWAY.avi</div>
-          <div class="flex" style="align-items:center;gap:8px;padding:5px 4px;"><img src="assets/icons/video.png" style="width:20px;height:20px;image-rendering:pixelated"> SUBWAY_TUNNEL_CAM.avi</div>
-          <div class="flex" style="align-items:center;gap:8px;padding:5px 4px;"><img src="assets/icons/video.png" style="width:20px;height:20px;image-rendering:pixelated"> FREEZER_AISLE_0207.avi</div>
-          <div class="flex" style="align-items:center;gap:8px;padding:5px 4px;"><img src="assets/icons/audio.png" style="width:20px;height:20px;image-rendering:pixelated"> 911_CALLS_NIGHT_ONE.wav</div>
-          <p style="margin-top:14px;color:#333;font-family:'Pixelated MS Sans Serif',Arial;font-size:14px;line-height:1.45;">The world called it <b>the Huffle Happening.</b> Overnight, millions appeared &mdash; driveways, subway tunnels, supermarket freezers. Nobody knew where from. Nobody knew how to make them stop.</p>
-        </div>
-        <div class="statusbar"><div class="field" style="flex:1">6 exhibits</div><div class="field">VERIFIED</div></div>
-      </div>
-    </div>
-
-    <!-- media player -->
-    <div class="window win" style="left:740px;top:120px;width:1060px;height:760px;">
-      <div class="title-bar"><div class="title-bar-text">Media Player &mdash; NEWS_BREAKING_2000.avi</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div></div>
-      <div class="menu-strip"><span><u>F</u>ile</span><span><u>V</u>iew</span><span><u>P</u>lay</span><span>F<u>a</u>vorites</span><span><u>H</u>elp</span></div>
-      <div class="window-body">
-        <div class="ph video" style="width:100%;height:560px;">
-          <img class="ph-ico" src="assets/icons/video.png" alt="">
-          <div class="ph-label" style="color:#bbb">PLACEHOLDER &mdash; FOUND FOOTAGE OF THE HAPPENING</div>
-          <div class="ph-sub" style="color:#888">Drop in-world clip: 2000 news montage / CCTV / citizen phone video. Escalating "BREAKING" chyrons &rarr; silence on a close-up.</div>
-          <div class="ph-dims" style="color:#888">1012 &times; 560</div>
-        </div>
-        <div class="flex" style="gap:10px;align-items:center;margin-top:12px;">
-          <button style="min-width:44px;">&#9664;&#9664;</button>
-          <button style="min-width:44px;">&#9654;</button>
-          <button style="min-width:44px;">&#10073;&#10073;</button>
-          <button style="min-width:44px;">&#9632;</button>
-          <button style="min-width:44px;">&#9654;&#9654;</button>
-          <div class="sunken-panel" style="flex:1;height:18px;"></div>
-          <span style="font-family:'VT323';font-size:22px;">00:00 / 02:14</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       SLIDE 6 — THE KIDS WHO SAVED THE WORLD (origin)
+       SLIDE 5 — THE KIDS WHO SAVED THE WORLD (origin)
        ============================================================ -->
   <section class="slide" data-chrome="desktop" data-task="origin — recovered files">
     <!-- photo viewer -->
@@ -281,8 +247,8 @@
           <p>By 2010 the Huffle population was doubling and doubling again. Adults panicked &mdash; caged them, ran from them &mdash; and every frightened Huffle just made two more. The crisis fed itself.</p>
           <p>The answer came from a leafy suburb outside Cincinnati &mdash; <b>Madeira, Ohio</b> &mdash; from kids who rode out to <i>help</i> instead of hide. They figured out what every expert missed:</p>
           <p style="font-size:22px;"><b>&gt; Happy Huffles don't multiply.</b></p>
-          <p>They wrote it down by hand &mdash; the <i>Huffle Helpers Handbook</i> &mdash; and put it online. Within a year it crossed the planet. Communities started caring for their Huffles instead of fearing them. The curve bent. The crisis broke.</p>
-          <p>A twelve-year-old named <b>Cindy Sloane</b> led that pack. She's not twelve anymore. The neighborhood watch she started has a name now, and a building, and a budget in the billions.</p>
+          <p>They wrote it down by hand &mdash; the <i>Huffle Helpers Handbook</i> &mdash; and put it online. Within a year it crossed the planet. The curve bent. The crisis broke.</p>
+          <p>A twelve-year-old named <b>Cindy Sloane</b> led that pack. The neighborhood watch she started has a name now, a building, and a budget in the billions.</p>
           <p style="font-size:22px;">It's called <b>HRUMF.</b></p>
         </div>
       </div>
@@ -300,72 +266,86 @@
        SLIDE 7 — HRUMF TODAY (org chart)
        ============================================================ -->
   <section class="slide" data-chrome="desktop" data-task="HRUMF_HQ.ORG — Organization Chart">
-    <div class="window win" style="left:120px;top:50px;width:1680px;height:920px;">
+    <div class="window win" style="left:90px;top:46px;width:1740px;height:948px;">
       <div class="title-bar"><div class="title-bar-text">HRUMF_HQ.ORG &mdash; Organization Chart</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div></div>
-      <div class="menu-strip"><span><u>F</u>ile</span><span><u>V</u>iew</span><span><u>H</u>elp</span></div>
-      <div class="window-body" style="height:836px;background:#e7e7d8;">
-        <div style="text-align:center;padding-top:6px;">
-          <div class="kicker" style="font-size:15px;color:#555;">HRUMF &middot; INSTITUTIONAL OVERVIEW 01 &middot; THE HUFFLE RESCUE AND UNHAPPINESS MITIGATION FORCE</div>
-          <p style="font-size:18px;color:#222;max-width:1100px;margin:10px auto 0;font-family:'Pixelated MS Sans Serif',Arial;">A billion-dollar global nonprofit that started as a kids' neighborhood watch &mdash; and never lost the heart of one. They find Huffles in distress, calm them, rehome them, and help them belong.</p>
-        </div>
+      <div class="menu-strip"><span><u>F</u>ile</span><span><u>V</u>iew</span><span><u>I</u>nsert</span><span><u>H</u>elp</span></div>
+      <div style="display:flex;align-items:center;gap:6px;padding:4px 8px;border-bottom:1px solid #808080;box-shadow:inset 0 1px 0 #fff;">
+        <button style="min-width:32px;height:26px;">&#128193;</button>
+        <button style="min-width:32px;height:26px;">&#128190;</button>
+        <span style="width:2px;height:22px;border-left:1px solid #808080;border-right:1px solid #fff;margin:0 4px;"></span>
+        <button style="min-width:32px;height:26px;">&#128269;</button>
+        <button style="min-width:32px;height:26px;">&#9113;</button>
+        <span style="margin-left:auto;font-family:'Courier New',monospace;font-size:12px;color:#333;letter-spacing:.5px;">EST. 2010 &nbsp;|&nbsp; STAFF ~1,400 &nbsp;|&nbsp; 3 DIVISIONS &nbsp;|&nbsp; CINCINNATI METRO</span>
+      </div>
+      <div class="window-body" style="height:786px;background:#e9e6d9;padding:0;">
+        <div style="display:flex;height:100%;">
+          <!-- LEFT: identity + chief + hero photo + doctrine -->
+          <div style="flex:0 0 580px;border-right:2px groove #d2ccbb;padding:24px;display:flex;flex-direction:column;gap:18px;">
+            <div>
+              <div style="font-family:'Pixelated MS Sans Serif',Arial;font-weight:bold;font-size:30px;color:#161616;letter-spacing:1px;">HRUMF</div>
+              <div class="kicker" style="font-size:12px;color:#8a8473;margin-top:2px;">INSTITUTIONAL OVERVIEW &middot; FILE 01</div>
+              <p style="font-size:15px;color:#2f2f2f;margin:12px 0 0;line-height:1.5;">The <b>Huffle Rescue and Unhappiness Mitigation Force</b> &mdash; a billion-dollar global nonprofit that started as a kids' neighborhood watch, and never lost the heart of one.</p>
+            </div>
+            <div class="window" style="box-shadow:2px 2px 0 #0002;">
+              <div class="title-bar"><div class="title-bar-text">DIRECTOR</div></div>
+              <div class="window-body flex" style="gap:14px;align-items:center;">
+                <div class="ph" style="width:86px;height:86px;flex:0 0 86px;"><div class="ph-dims" style="position:static;font-size:9px">90</div></div>
+                <div><b style="font-size:18px;">Cindy "Sabertooth" Sloane</b><br><span style="font-size:13px;color:#666;">Founder &middot; Director &middot; led the watch at 12</span></div>
+              </div>
+            </div>
+            <div class="ph" style="flex:1;min-height:210px;">
+              <div class="ph-label">HUFFLE HABITAT &mdash; BIODOME</div>
+              <div class="ph-sub">Glass-and-greenery multi-biome dome at golden hour, small Huffles inside.</div>
+              <div class="ph-dims">532 &times; 300</div>
+            </div>
+            <div style="text-align:center;padding-top:2px;">
+              <span class="stamp green" style="position:relative;display:inline-block;transform:rotate(-2deg);font-size:23px;">HAPPY HUFFLES = HAPPY HUMANS</span>
+              <div style="font-family:'Courier New',monospace;color:#555;margin-top:10px;font-size:13px;letter-spacing:.5px;">RESCUE &rarr; RELOCATE &rarr; REHABILITATE &rarr; REINTEGRATE</div>
+            </div>
+          </div>
+          <!-- RIGHT: divisions as rich full-height rows -->
+          <div style="flex:1;padding:24px;display:flex;flex-direction:column;gap:16px;">
+            <div style="font-family:'Pixelated MS Sans Serif',Arial;font-weight:bold;font-size:18px;color:#161616;">THE THREE DIVISIONS</div>
 
-        <!-- chief -->
-        <div style="display:flex;justify-content:center;margin-top:18px;">
-          <div class="window" style="width:360px;box-shadow:2px 2px 0 #0003;">
-            <div class="title-bar"><div class="title-bar-text">THE CHIEF</div></div>
-            <div class="window-body flex" style="gap:12px;align-items:center;">
-              <div class="ph" style="width:70px;height:70px;"><div class="ph-dims" style="position:static;font-size:9px">90&times;90</div></div>
-              <div><b style="font-size:18px;">Cindy "Sabertooth" Sloane</b><br><span style="font-size:14px;color:#555;">Founder &middot; Director</span></div>
+            <div style="flex:1;display:flex;background:#fff;border:1px solid #c2bba6;border-left:9px solid #d8a200;box-shadow:2px 2px 0 #00000010;">
+              <div style="width:128px;flex:0 0 128px;display:flex;align-items:center;justify-content:center;background:#fbf6ea;border-right:1px solid #ece6d6;">
+                <div class="ph" style="width:88px;height:88px;"><div class="ph-label" style="color:#a06a00;font-size:10px;">RANGER</div></div>
+              </div>
+              <div style="padding:16px 20px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+                <div style="font-family:'Pixelated MS Sans Serif',Arial;font-weight:bold;font-size:21px;color:#a06a00;">RANGER <span style="color:#cdbf9a;font-weight:normal;font-size:16px;">&mdash; Field Rescue</span></div>
+                <p style="font-size:15px;color:#333;margin:7px 0 9px;line-height:1.45;">The ones who go in. High-risk extractions; talking ballooning Huffles down off the ledge. The public face of doing it the <i>right</i> way.</p>
+                <div><span class="kicker" style="font-size:11px;color:#999;">CHIEF</span> &nbsp;<b style="font-size:15px;">Diego Salcedo</b></div>
+              </div>
+            </div>
+
+            <div style="flex:1;display:flex;background:#fff;border:1px solid #c2bba6;border-left:9px solid #2e7d32;box-shadow:2px 2px 0 #00000010;">
+              <div style="width:128px;flex:0 0 128px;display:flex;align-items:center;justify-content:center;background:#f1f8f1;border-right:1px solid #dce9dc;">
+                <div class="ph" style="width:88px;height:88px;"><div class="ph-label" style="color:#1b651e;font-size:10px;">WARDEN</div></div>
+              </div>
+              <div style="padding:16px 20px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+                <div style="font-family:'Pixelated MS Sans Serif',Arial;font-weight:bold;font-size:21px;color:#1b651e;">WARDEN <span style="color:#aecbae;font-weight:normal;font-size:16px;">&mdash; Habitats</span></div>
+                <p style="font-size:15px;color:#333;margin:7px 0 9px;line-height:1.45;">Builders of the Huffle Habitats: multi-biome biodomes where rescued Huffles decompress and learn to live among us.</p>
+                <div><span class="kicker" style="font-size:11px;color:#999;">CHIEF</span> &nbsp;<b style="font-size:15px;">Jun Park</b></div>
+              </div>
+            </div>
+
+            <div style="flex:1;display:flex;background:#fff;border:1px solid #c2bba6;border-left:9px solid #1565c0;box-shadow:2px 2px 0 #00000010;">
+              <div style="width:128px;flex:0 0 128px;display:flex;align-items:center;justify-content:center;background:#eef4fb;border-right:1px solid #d7e4f2;">
+                <div class="ph" style="width:88px;height:88px;"><div class="ph-label" style="color:#0d4f9c;font-size:10px;">SEEKER</div></div>
+              </div>
+              <div style="padding:16px 20px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+                <div style="font-family:'Pixelated MS Sans Serif',Arial;font-weight:bold;font-size:21px;color:#0d4f9c;">SEEKER <span style="color:#a9c4e6;font-weight:normal;font-size:16px;">&mdash; Research &amp; Tech</span></div>
+                <p style="font-size:15px;color:#333;margin:7px 0 9px;line-height:1.45;">The brains. Behavioral science, the Sanctuary AI, and the search for where Huffles actually come from.</p>
+                <div><span class="kicker" style="font-size:11px;color:#999;">CHIEF</span> &nbsp;<b style="font-size:15px;">Amara Osei</b></div>
+              </div>
             </div>
           </div>
         </div>
-        <div style="text-align:center;color:#888;font-size:24px;line-height:.6;">&#9474;<br>&#9474;</div>
-
-        <!-- three divisions -->
-        <div class="flex" style="gap:26px;justify-content:center;margin-top:6px;padding:0 40px;">
-          <div class="window" style="flex:1;max-width:480px;box-shadow:2px 2px 0 #0003;border-top:6px solid #d8a200;">
-            <div class="title-bar" style="background:linear-gradient(90deg,#d8a200,#9c7600);"><div class="title-bar-text">&#128993; RANGER &mdash; FIELD RESCUE</div></div>
-            <div class="window-body" style="font-size:15px;">
-              <p style="margin:0 0 8px;">The ones who go in. High-risk extractions; talking ballooning Huffles down off the ledge. The public face of doing it the <i>right</i> way.</p>
-              <div class="kv" style="font-size:14px;"><span class="k">Chief</span><span>Diego Salcedo</span></div>
-            </div>
-          </div>
-          <div class="window" style="flex:1;max-width:480px;box-shadow:2px 2px 0 #0003;border-top:6px solid #2e7d32;">
-            <div class="title-bar" style="background:linear-gradient(90deg,#2e7d32,#1b521e);"><div class="title-bar-text">&#128994; WARDEN &mdash; HABITATS</div></div>
-            <div class="window-body" style="font-size:15px;">
-              <p style="margin:0 0 8px;">Builders of the Huffle Habitats: multi-biome biodomes where rescued Huffles decompress and learn to live among us.</p>
-              <div class="kv" style="font-size:14px;"><span class="k">Chief</span><span>Jun Park</span></div>
-            </div>
-          </div>
-          <div class="window" style="flex:1;max-width:480px;box-shadow:2px 2px 0 #0003;border-top:6px solid #1565c0;">
-            <div class="title-bar" style="background:linear-gradient(90deg,#1565c0,#0d3f7a);"><div class="title-bar-text">&#128309; SEEKER &mdash; RESEARCH &amp; TECH</div></div>
-            <div class="window-body" style="font-size:15px;">
-              <p style="margin:0 0 8px;">The brains. Behavioral science, the Sanctuary AI, and the search for where Huffles actually come from.</p>
-              <div class="kv" style="font-size:14px;"><span class="k">Chief</span><span>Amara Osei</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- doctrine seal -->
-        <div style="text-align:center;margin-top:26px;">
-          <span class="stamp green" style="position:relative;display:inline-block;transform:rotate(-2deg);font-size:30px;">HAPPY HUFFLES = HAPPY HUMANS</span>
-          <div style="font-family:'Courier New',monospace;color:#444;margin-top:14px;font-size:16px;">RESCUE &rarr; RELOCATE &rarr; REHABILITATE &rarr; REINTEGRATE</div>
-        </div>
-
-        <!-- biodome hero fills lower half -->
-        <div class="flex" style="gap:24px;margin:28px 30px 0;align-items:stretch;">
-          <div class="ph" style="flex:2;height:300px;">
-            <img class="ph-ico" src="assets/icons/folder_file.png" alt="">
-            <div class="ph-label">HUFFLE HABITAT &mdash; BIODOME EXTERIOR</div>
-            <div class="ph-sub">Glass-and-greenery multi-biome dome at golden hour, small Huffles visible inside. "This place exists."</div>
-            <div class="ph-dims">980 &times; 300</div>
-          </div>
-          <div class="ph" style="flex:1;height:300px;">
-            <div class="ph-label">COMMAND CENTER &mdash; INTERIOR</div>
-            <div class="ph-sub">Seeker ops floor / Sanctuary AI wall.</div>
-            <div class="ph-dims">470 &times; 300</div>
-          </div>
-        </div>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">HRUMF_HQ.ORG</p>
+        <p class="status-bar-field">3 divisions &middot; est. 2010</p>
+        <p class="status-bar-field">CLEARANCE: PUBLIC (LEAKED)</p>
       </div>
     </div>
   </section>
@@ -403,172 +383,242 @@
 
   <!-- SLIDE 9 — INDY + SASSY (Ranger / yellow) -->
   <section class="slide" data-chrome="desktop" data-task="PERSONNEL\INDY_PEREZ.rec">
-    <div class="window win" style="left:160px;top:60px;width:1600px;height:772px;border-top:6px solid #d8a200;">
+    <div class="window win" style="left:160px;top:54px;width:1600px;height:800px;border-top:6px solid #d8a200;">
       <div class="title-bar"><div class="title-bar-text">PERSONNEL\INDY_PEREZ.rec &mdash; Record Viewer</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div></div>
-      <div class="window-body" style="height:688px;position:relative;">
-        <span class="stamp green" style="bottom:70px;right:90px;transform:rotate(-9deg);font-size:30px;">LEAKED&nbsp;&middot;&nbsp;HRUMF</span>
-        <div class="flex" style="gap:30px;height:100%;">
-          <div class="col" style="flex:0 0 460px;">
-            <div class="ph" style="width:460px;height:548px;"><div class="ph-label">OPERATIVE PORTRAIT</div><div class="ph-sub">Indy + Sassy, mission-ready, lived-in documentary lighting.</div><div class="ph-dims">460&times;600</div></div>
-            <b style="margin-top:12px;font-size:22px;">Indalecio "Indy" Perez</b>
-            <span style="font-size:16px;color:#a06a00;">RANGER &middot; FIELD LEAD</span>
+      <div class="window-body" style="height:732px;">
+        <div class="flex" style="gap:26px;height:100%;">
+          <!-- ID photo with name plate -->
+          <div style="flex:0 0 470px;position:relative;">
+            <div class="ph" style="width:470px;height:100%;">
+              <div class="ph-label">OPERATIVE PORTRAIT</div>
+              <div class="ph-sub">Indy + Sassy, mission-ready, lived-in documentary lighting.</div>
+              <div class="ph-dims">470 &times; 760</div>
+            </div>
+            <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.78) 55%);padding:30px 20px 16px;">
+              <b style="color:#fff;font-size:25px;font-family:'Pixelated MS Sans Serif',Arial;">Indalecio "Indy" Perez</b><br>
+              <span style="color:#ffcf4d;font-size:14px;font-family:'Courier New',monospace;letter-spacing:1px;">RANGER &middot; FIELD LEAD</span>
+            </div>
+            <span class="stamp green" style="top:16px;right:16px;font-size:17px;padding:3px 10px;border-width:3px;transform:rotate(8deg);">LEAKED</span>
           </div>
-          <div style="flex:1;font-family:'Courier New',monospace;">
-            <div class="doc-header" style="border-color:#d8a200;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS &middot; ACTIVE ROSTER</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
-            <div class="kv" style="font-size:18px;row-gap:10px;">
+          <!-- record -->
+          <div style="flex:1;display:flex;flex-direction:column;font-family:'Courier New',monospace;">
+            <div class="doc-header" style="border-color:#d8a200;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
+            <div class="kv" style="font-size:18px;row-gap:10px;grid-template-columns:150px 1fr;">
               <span class="k">Operative</span><span>Indalecio "Indy" Perez</span>
-              <span class="k">Division</span><span>Ranger &middot; Field Lead</span>
+              <span class="k">Division</span><span style="color:#a06a00;font-weight:bold;">Ranger &middot; Field Lead</span>
               <span class="k">Bonded</span><span>Sassy</span>
-              <span class="k">Status</span><span style="color:#1b651e;">ACTIVE</span>
+              <span class="k">Status</span><span style="color:#1b651e;">&#9679; ACTIVE</span>
             </div>
             <div style="margin-top:20px;border:2px solid #d8a200;background:#fffdf2;padding:14px 16px;">
               <div class="kicker" style="font-size:13px;color:#a06a00;margin-bottom:8px;">FIELD NOTES</div>
-              <p style="font-size:17px;margin:0;">Bold, charismatic, leads from the front. The face of the rescue &mdash; and the reason the public ever learned to trust a Huffle handler. First in, last out.</p>
+              <p style="font-size:17px;margin:0;line-height:1.5;">Bold, charismatic, leads from the front. The face of the rescue &mdash; and the reason the public ever learned to trust a Huffle handler. First in, last out.</p>
             </div>
             <div style="margin-top:18px;">
-              <div class="kicker" style="font-size:13px;color:#555;">CREATURE FILE &mdash; BONDED PARTNER</div>
-              <div class="window" style="margin-top:8px;box-shadow:2px 2px 0 #0002;">
+              <div class="kicker" style="font-size:13px;color:#555;margin-bottom:8px;">CREATURE FILE &mdash; BONDED PARTNER</div>
+              <div class="window" style="box-shadow:2px 2px 0 #0002;">
                 <div class="title-bar"><div class="title-bar-text">SASSY.huf</div></div>
-                <div class="window-body flex" style="gap:16px;">
-                  <div class="ph" style="width:150px;height:150px;flex:0 0 150px;"><div class="ph-label" style="font-size:12px;">SASSY</div><div class="ph-dims">150&times;150</div></div>
+                <div class="window-body flex" style="gap:18px;">
+                  <div class="ph" style="width:170px;height:170px;flex:0 0 170px;"><div class="ph-label" style="font-size:12px;">SASSY</div><div class="ph-dims">170</div></div>
                   <div style="font-size:15px;">
-                    <div class="kv" style="font-size:14px;"><span class="k">Ability</span><span>Armorball &mdash; rolls through anything</span><span class="k">Tell</span><span>HRUMF cap she refuses to remove</span></div>
-                    <p style="margin:8px 0 0;">Big, bold, fearless. Pockets a "trophy" from every single mission. Climbs what shouldn't be climbable.</p>
+                    <div class="kv" style="font-size:14px;grid-template-columns:90px 1fr;"><span class="k">Ability</span><span>Armorball &mdash; rolls through anything</span><span class="k">Tell</span><span>HRUMF cap she refuses to remove</span></div>
+                    <p style="margin:10px 0 0;line-height:1.5;">Big, bold, fearless. Pockets a "trophy" from every single mission. Climbs what shouldn't be climbable.</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div style="margin-top:auto;display:flex;gap:0;border:1px solid #c9c2ad;background:#f3efe2;font-size:13px;letter-spacing:.5px;">
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">SERVICE</span> 2018&ndash;PRESENT</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">MISSIONS</span> 200+</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">COMMENDATIONS</span> 4</span>
+              <span style="flex:1;padding:8px 12px;"><span class="k" style="color:#999;">CLEARANCE</span> PUBLIC</span>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">PERSONNEL\INDY_PEREZ.rec</p>
+        <p class="status-bar-field">ALL STARS &middot; ACTIVE ROSTER</p>
+        <p class="status-bar-field">CLEARANCE: PUBLIC (LEAKED)</p>
       </div>
     </div>
   </section>
 
   <!-- SLIDE 10 — FAI + LUCA (Ranger / yellow) -->
   <section class="slide" data-chrome="desktop" data-task="PERSONNEL\LINA_KLA.rec">
-    <div class="window win" style="left:160px;top:60px;width:1600px;height:772px;border-top:6px solid #d8a200;">
+    <div class="window win" style="left:160px;top:54px;width:1600px;height:800px;border-top:6px solid #d8a200;">
       <div class="title-bar"><div class="title-bar-text">PERSONNEL\LINA_KLA.rec &mdash; Record Viewer</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div></div>
-      <div class="window-body" style="height:688px;position:relative;">
-        <span class="stamp green" style="bottom:70px;right:90px;transform:rotate(-9deg);font-size:30px;">LEAKED&nbsp;&middot;&nbsp;HRUMF</span>
-        <div class="flex" style="gap:30px;height:100%;">
-          <div class="col" style="flex:0 0 460px;">
-            <div class="ph" style="width:460px;height:548px;"><div class="ph-label">OPERATIVE PORTRAIT</div><div class="ph-sub">Fai + Luca, calm, unreadable. Quiet competence.</div><div class="ph-dims">460&times;600</div></div>
-            <b style="margin-top:12px;font-size:22px;">Lina "Fai" Kla</b>
-            <span style="font-size:16px;color:#a06a00;">RANGER &middot; SEARCH &amp; RESCUE</span>
+      <div class="window-body" style="height:732px;">
+        <div class="flex" style="gap:26px;height:100%;">
+          <div style="flex:0 0 470px;position:relative;">
+            <div class="ph" style="width:470px;height:100%;">
+              <div class="ph-label">OPERATIVE PORTRAIT</div>
+              <div class="ph-sub">Fai + Luca, calm, unreadable. Quiet competence.</div>
+              <div class="ph-dims">470 &times; 700</div>
+            </div>
+            <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.78) 55%);padding:30px 20px 16px;">
+              <b style="color:#fff;font-size:25px;font-family:'Pixelated MS Sans Serif',Arial;">Lina "Fai" Kla</b><br>
+              <span style="color:#ffcf4d;font-size:14px;font-family:'Courier New',monospace;letter-spacing:1px;">RANGER &middot; SEARCH &amp; RESCUE</span>
+            </div>
+            <span class="stamp green" style="top:16px;right:16px;font-size:17px;padding:3px 10px;border-width:3px;transform:rotate(8deg);">LEAKED</span>
           </div>
-          <div style="flex:1;font-family:'Courier New',monospace;">
-            <div class="doc-header" style="border-color:#d8a200;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS &middot; ACTIVE ROSTER</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
-            <div class="kv" style="font-size:18px;row-gap:10px;">
+          <div style="flex:1;display:flex;flex-direction:column;font-family:'Courier New',monospace;">
+            <div class="doc-header" style="border-color:#d8a200;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
+            <div class="kv" style="font-size:18px;row-gap:10px;grid-template-columns:150px 1fr;">
               <span class="k">Operative</span><span>Lina "Fai" Kla</span>
-              <span class="k">Division</span><span>Ranger &middot; Search &amp; Rescue Specialist</span>
+              <span class="k">Division</span><span style="color:#a06a00;font-weight:bold;">Ranger &middot; Search &amp; Rescue</span>
               <span class="k">Bonded</span><span>Luca</span>
-              <span class="k">Status</span><span style="color:#1b651e;">ACTIVE</span>
+              <span class="k">Status</span><span style="color:#1b651e;">&#9679; ACTIVE</span>
             </div>
             <div style="margin-top:20px;border:2px solid #d8a200;background:#fffdf2;padding:14px 16px;">
               <div class="kicker" style="font-size:13px;color:#a06a00;margin-bottom:8px;">FIELD NOTES</div>
-              <p style="font-size:17px;margin:0;">Monastery-raised. Telepathically linked to Luca since age eight. The quietest, deadliest de-escalator HRUMF has &mdash; talks a ballooning Huffle back down without saying a word.</p>
+              <p style="font-size:17px;margin:0;line-height:1.5;">Monastery-raised. Telepathically linked to Luca since age eight. The quietest, deadliest de-escalator HRUMF has &mdash; talks a ballooning Huffle back down without saying a word.</p>
             </div>
             <div style="margin-top:18px;">
-              <div class="kicker" style="font-size:13px;color:#555;">CREATURE FILE &mdash; BONDED PARTNER</div>
-              <div class="window" style="margin-top:8px;box-shadow:2px 2px 0 #0002;">
+              <div class="kicker" style="font-size:13px;color:#555;margin-bottom:8px;">CREATURE FILE &mdash; BONDED PARTNER</div>
+              <div class="window" style="box-shadow:2px 2px 0 #0002;">
                 <div class="title-bar"><div class="title-bar-text">LUCA.huf</div></div>
-                <div class="window-body flex" style="gap:16px;">
-                  <div class="ph" style="width:150px;height:150px;flex:0 0 150px;"><div class="ph-label" style="font-size:12px;">LUCA</div><div class="ph-dims">150&times;150</div></div>
+                <div class="window-body flex" style="gap:18px;">
+                  <div class="ph" style="width:170px;height:170px;flex:0 0 170px;"><div class="ph-label" style="font-size:12px;">LUCA</div><div class="ph-dims">170</div></div>
                   <div style="font-size:15px;">
-                    <div class="kv" style="font-size:14px;"><span class="k">Ability</span><span>Telekinesis &mdash; moves objects &amp; feelings</span><span class="k">Tell</span><span>Neck bandana</span></div>
-                    <p style="margin:8px 0 0;">Quiet. Bonded to Fai so completely they don't need to talk. Moves a room without lifting a finger.</p>
+                    <div class="kv" style="font-size:14px;grid-template-columns:90px 1fr;"><span class="k">Ability</span><span>Telekinesis &mdash; moves objects &amp; feelings</span><span class="k">Tell</span><span>Neck bandana</span></div>
+                    <p style="margin:10px 0 0;line-height:1.5;">Quiet. Bonded to Fai so completely they don't need to talk. Moves a room without lifting a finger.</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div style="margin-top:auto;display:flex;gap:0;border:1px solid #c9c2ad;background:#f3efe2;font-size:13px;letter-spacing:.5px;">
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">SERVICE</span> 2016&ndash;PRESENT</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">RESCUES</span> 300+</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">SILENT OPS</span> 90%</span>
+              <span style="flex:1;padding:8px 12px;"><span class="k" style="color:#999;">CLEARANCE</span> PUBLIC</span>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">PERSONNEL\LINA_KLA.rec</p>
+        <p class="status-bar-field">ALL STARS &middot; ACTIVE ROSTER</p>
+        <p class="status-bar-field">CLEARANCE: PUBLIC (LEAKED)</p>
       </div>
     </div>
   </section>
 
   <!-- SLIDE 11 — ISAAC + ALAN (Warden / green) -->
   <section class="slide" data-chrome="desktop" data-task="PERSONNEL\ISAAC_RYAN.rec">
-    <div class="window win" style="left:160px;top:60px;width:1600px;height:772px;border-top:6px solid #2e7d32;">
+    <div class="window win" style="left:160px;top:54px;width:1600px;height:800px;border-top:6px solid #2e7d32;">
       <div class="title-bar"><div class="title-bar-text">PERSONNEL\ISAAC_RYAN.rec &mdash; Record Viewer</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div></div>
-      <div class="window-body" style="height:688px;position:relative;">
-        <span class="stamp green" style="bottom:70px;right:90px;transform:rotate(-9deg);font-size:30px;">LEAKED&nbsp;&middot;&nbsp;HRUMF</span>
-        <div class="flex" style="gap:30px;height:100%;">
-          <div class="col" style="flex:0 0 460px;">
-            <div class="ph" style="width:460px;height:548px;"><div class="ph-label">OPERATIVE PORTRAIT</div><div class="ph-sub">Isaac + Alan. Builder's hands, deadpan partner.</div><div class="ph-dims">460&times;600</div></div>
-            <b style="margin-top:12px;font-size:22px;">Isaac Ryan</b>
-            <span style="font-size:16px;color:#1b651e;">WARDEN &middot; HABITAT ARCHITECT</span>
+      <div class="window-body" style="height:732px;">
+        <div class="flex" style="gap:26px;height:100%;">
+          <div style="flex:0 0 470px;position:relative;">
+            <div class="ph" style="width:470px;height:100%;">
+              <div class="ph-label">OPERATIVE PORTRAIT</div>
+              <div class="ph-sub">Isaac + Alan. Builder's hands, deadpan partner.</div>
+              <div class="ph-dims">470 &times; 700</div>
+            </div>
+            <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.78) 55%);padding:30px 20px 16px;">
+              <b style="color:#fff;font-size:25px;font-family:'Pixelated MS Sans Serif',Arial;">Isaac Ryan</b><br>
+              <span style="color:#86e08c;font-size:14px;font-family:'Courier New',monospace;letter-spacing:1px;">WARDEN &middot; HABITAT ARCHITECT</span>
+            </div>
+            <span class="stamp green" style="top:16px;right:16px;font-size:17px;padding:3px 10px;border-width:3px;transform:rotate(8deg);">LEAKED</span>
           </div>
-          <div style="flex:1;font-family:'Courier New',monospace;">
-            <div class="doc-header" style="border-color:#2e7d32;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS &middot; ACTIVE ROSTER</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
-            <div class="kv" style="font-size:18px;row-gap:10px;">
+          <div style="flex:1;display:flex;flex-direction:column;font-family:'Courier New',monospace;">
+            <div class="doc-header" style="border-color:#2e7d32;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
+            <div class="kv" style="font-size:18px;row-gap:10px;grid-template-columns:150px 1fr;">
               <span class="k">Operative</span><span>Isaac Ryan</span>
-              <span class="k">Division</span><span>Warden &middot; Habitat Architect</span>
+              <span class="k">Division</span><span style="color:#1b651e;font-weight:bold;">Warden &middot; Habitat Architect</span>
               <span class="k">Bonded</span><span>Alan</span>
-              <span class="k">Status</span><span style="color:#1b651e;">ACTIVE</span>
+              <span class="k">Status</span><span style="color:#1b651e;">&#9679; ACTIVE</span>
             </div>
             <div style="margin-top:20px;border:2px solid #2e7d32;background:#f3faf3;padding:14px 16px;">
               <div class="kicker" style="font-size:13px;color:#1b651e;margin-bottom:8px;">FIELD NOTES</div>
-              <p style="font-size:17px;margin:0;">Built the first Habitats &mdash; the multi-biome biodomes where rescued Huffles learn to live among us. Alan is the only Huffle on record who <i>talks back</i>, and Isaac wouldn't have it any other way.</p>
+              <p style="font-size:17px;margin:0;line-height:1.5;">Built the first Habitats &mdash; the multi-biome biodomes where rescued Huffles learn to live among us. Alan is the only Huffle on record who <i>talks back</i>, and Isaac wouldn't have it any other way.</p>
             </div>
             <div style="margin-top:18px;">
-              <div class="kicker" style="font-size:13px;color:#555;">CREATURE FILE &mdash; BONDED PARTNER</div>
-              <div class="window" style="margin-top:8px;box-shadow:2px 2px 0 #0002;">
+              <div class="kicker" style="font-size:13px;color:#555;margin-bottom:8px;">CREATURE FILE &mdash; BONDED PARTNER</div>
+              <div class="window" style="box-shadow:2px 2px 0 #0002;">
                 <div class="title-bar"><div class="title-bar-text">ALAN.huf</div></div>
-                <div class="window-body flex" style="gap:16px;">
-                  <div class="ph" style="width:150px;height:150px;flex:0 0 150px;"><div class="ph-label" style="font-size:12px;">ALAN</div><div class="ph-dims">150&times;150</div></div>
+                <div class="window-body flex" style="gap:18px;">
+                  <div class="ph" style="width:170px;height:170px;flex:0 0 170px;"><div class="ph-label" style="font-size:12px;">ALAN</div><div class="ph-dims">170</div></div>
                   <div style="font-size:15px;">
-                    <div class="kv" style="font-size:14px;"><span class="k">Ability</span><span>Speech &mdash; the only talking Huffle</span><span class="k">Tell</span><span>Allergic to being carried</span></div>
-                    <p style="margin:8px 0 0;">Brilliant, deadpan. Rescued from a lab as one of the very first Huffles &mdash; and he has <i>opinions</i> about it.</p>
+                    <div class="kv" style="font-size:14px;grid-template-columns:90px 1fr;"><span class="k">Ability</span><span>Speech &mdash; the only talking Huffle</span><span class="k">Tell</span><span>Allergic to being carried</span></div>
+                    <p style="margin:10px 0 0;line-height:1.5;">Brilliant, deadpan. Rescued from a lab as one of the very first Huffles &mdash; and he has <i>opinions</i> about it.</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div style="margin-top:auto;display:flex;gap:0;border:1px solid #c9c2ad;background:#f3efe2;font-size:13px;letter-spacing:.5px;">
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">SERVICE</span> 2014&ndash;PRESENT</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">HABITATS</span> 12 BUILT</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">BIOMES</span> 40+</span>
+              <span style="flex:1;padding:8px 12px;"><span class="k" style="color:#999;">CLEARANCE</span> PUBLIC</span>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">PERSONNEL\ISAAC_RYAN.rec</p>
+        <p class="status-bar-field">ALL STARS &middot; ACTIVE ROSTER</p>
+        <p class="status-bar-field">CLEARANCE: PUBLIC (LEAKED)</p>
       </div>
     </div>
   </section>
 
   <!-- SLIDE 12 — ANGELA + TIC/TAC/TOE (Seeker / blue) -->
   <section class="slide" data-chrome="desktop" data-task="PERSONNEL\ANGELA_WARD.rec">
-    <div class="window win" style="left:160px;top:60px;width:1600px;height:772px;border-top:6px solid #1565c0;">
+    <div class="window win" style="left:160px;top:54px;width:1600px;height:800px;border-top:6px solid #1565c0;">
       <div class="title-bar"><div class="title-bar-text">PERSONNEL\ANGELA_WARD.rec &mdash; Record Viewer</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div></div>
-      <div class="window-body" style="height:688px;position:relative;">
-        <span class="stamp green" style="bottom:70px;right:90px;transform:rotate(-9deg);font-size:30px;">LEAKED&nbsp;&middot;&nbsp;HRUMF</span>
-        <div class="flex" style="gap:30px;height:100%;">
-          <div class="col" style="flex:0 0 460px;">
-            <div class="ph" style="width:460px;height:548px;"><div class="ph-label">OPERATIVE PORTRAIT</div><div class="ph-sub">Angela in her chair, three lab-coat Huffles causing trouble around her.</div><div class="ph-dims">460&times;600</div></div>
-            <b style="margin-top:12px;font-size:22px;">Angela Ward</b>
-            <span style="font-size:16px;color:#0d4f9c;">SEEKER &middot; SANCTUARY AI ARCHITECT</span>
+      <div class="window-body" style="height:732px;">
+        <div class="flex" style="gap:26px;height:100%;">
+          <div style="flex:0 0 470px;position:relative;">
+            <div class="ph" style="width:470px;height:100%;">
+              <div class="ph-label">OPERATIVE PORTRAIT</div>
+              <div class="ph-sub">Angela in her chair, three lab-coat Huffles causing trouble around her.</div>
+              <div class="ph-dims">470 &times; 700</div>
+            </div>
+            <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.78) 55%);padding:30px 20px 16px;">
+              <b style="color:#fff;font-size:25px;font-family:'Pixelated MS Sans Serif',Arial;">Angela Ward</b><br>
+              <span style="color:#7fb3ee;font-size:14px;font-family:'Courier New',monospace;letter-spacing:1px;">SEEKER &middot; SANCTUARY AI ARCHITECT</span>
+            </div>
+            <span class="stamp green" style="top:16px;right:16px;font-size:17px;padding:3px 10px;border-width:3px;transform:rotate(8deg);">LEAKED</span>
           </div>
-          <div style="flex:1;font-family:'Courier New',monospace;">
-            <div class="doc-header" style="border-color:#1565c0;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS &middot; ACTIVE ROSTER</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
-            <div class="kv" style="font-size:18px;row-gap:10px;">
+          <div style="flex:1;display:flex;flex-direction:column;font-family:'Courier New',monospace;">
+            <div class="doc-header" style="border-color:#1565c0;"><span>HRUMF PERSONNEL DOSSIER &middot; ALL STARS</span><span>CLEARANCE: PUBLIC (LEAKED)</span></div>
+            <div class="kv" style="font-size:18px;row-gap:10px;grid-template-columns:150px 1fr;">
               <span class="k">Operative</span><span>Angela Ward</span>
-              <span class="k">Division</span><span>Seeker &middot; Professor &middot; Sanctuary AI Architect</span>
+              <span class="k">Division</span><span style="color:#0d4f9c;font-weight:bold;">Seeker &middot; Sanctuary AI Architect</span>
               <span class="k">Bonded</span><span>Tic, Tac &amp; Toe</span>
-              <span class="k">Status</span><span style="color:#1b651e;">ACTIVE</span>
+              <span class="k">Status</span><span style="color:#1b651e;">&#9679; ACTIVE</span>
             </div>
             <div style="margin-top:20px;border:2px solid #1565c0;background:#f2f7fd;padding:14px 16px;">
               <div class="kicker" style="font-size:13px;color:#0d4f9c;margin-bottom:8px;">FIELD NOTES</div>
-              <p style="font-size:17px;margin:0;">Twenty-one. Wheelchair user. Built <b>Sanctuary</b> &mdash; the AI that runs every mission &mdash; and somehow also looks after three lab-coat Huffles who keep almost breaking it.</p>
+              <p style="font-size:17px;margin:0;line-height:1.5;">Twenty-one. Wheelchair user. Built <b>Sanctuary</b> &mdash; the AI that runs every mission &mdash; and somehow also looks after three lab-coat Huffles who keep almost breaking it.</p>
             </div>
             <div style="margin-top:18px;">
-              <div class="kicker" style="font-size:13px;color:#555;">CREATURE FILE &mdash; BONDED PARTNERS</div>
-              <div class="window" style="margin-top:8px;box-shadow:2px 2px 0 #0002;">
+              <div class="kicker" style="font-size:13px;color:#555;margin-bottom:8px;">CREATURE FILE &mdash; BONDED PARTNERS</div>
+              <div class="window" style="box-shadow:2px 2px 0 #0002;">
                 <div class="title-bar"><div class="title-bar-text">TIC_TAC_TOE.huf &mdash; 3 records</div></div>
-                <div class="window-body flex" style="gap:16px;">
-                  <div class="ph" style="width:150px;height:150px;flex:0 0 150px;"><div class="ph-label" style="font-size:12px;">TIC&middot;TAC&middot;TOE</div><div class="ph-dims">150&times;150</div></div>
+                <div class="window-body flex" style="gap:18px;">
+                  <div class="ph" style="width:170px;height:170px;flex:0 0 170px;"><div class="ph-label" style="font-size:11px;">TIC&middot;TAC&middot;TOE</div><div class="ph-dims">170</div></div>
                   <div style="font-size:15px;">
-                    <div class="kv" style="font-size:14px;"><span class="k">Origin</span><span>Three from one cocoon &mdash; a universe first</span><span class="k">Tell</span><span>Tiny lab coats</span></div>
-                    <p style="margin:8px 0 0;">Eager, clumsy, chaotic lab assistants. They want to help <i>so badly.</i> It rarely goes to plan.</p>
+                    <div class="kv" style="font-size:14px;grid-template-columns:90px 1fr;"><span class="k">Origin</span><span>Three from one cocoon &mdash; a universe first</span><span class="k">Tell</span><span>Tiny lab coats</span></div>
+                    <p style="margin:10px 0 0;line-height:1.5;">Eager, clumsy, chaotic lab assistants. They want to help <i>so badly.</i> It rarely goes to plan.</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div style="margin-top:auto;display:flex;gap:0;border:1px solid #c9c2ad;background:#f3efe2;font-size:13px;letter-spacing:.5px;">
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">AGE</span> 21</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">AI UPTIME</span> 99.9%</span>
+              <span style="flex:1;padding:8px 12px;border-right:1px solid #d9d3c0;"><span class="k" style="color:#999;">LAB INCIDENTS</span> &infin;</span>
+              <span style="flex:1;padding:8px 12px;"><span class="k" style="color:#999;">CLEARANCE</span> PUBLIC</span>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">PERSONNEL\ANGELA_WARD.rec</p>
+        <p class="status-bar-field">ALL STARS &middot; ACTIVE ROSTER</p>
+        <p class="status-bar-field">CLEARANCE: PUBLIC (LEAKED)</p>
       </div>
     </div>
   </section>
@@ -593,9 +643,9 @@
           </div>
         </div>
         <div style="font-family:'Courier New',monospace;color:#111;font-size:18px;line-height:1.5;padding:18px 26px 0;max-width:1300px;">
-          <p style="margin:0 0 10px;">Two kids started the Huffle Helpers on the same street in Madeira. Cindy Sloane was one of them. Her best friend &mdash; maybe more &mdash; was a boy named <b>Chris Tanti</b>. They drew the Helpers' first logo together.</p>
-          <p style="margin:0 0 10px;">Then a Huffle took everything from him. A stowaway, terrified, hidden in the engine room of his parents' anniversary cruise. It ballooned. The ship went down. His mother and father went with it &mdash; killed by the gentlest creature on Earth, simply because it was <i>scared.</i></p>
-          <p style="margin:0 0 10px;">Cindy said it was a tragedy. Chris said it was a <i>verdict.</i> They were eighteen. They never spoke again.</p>
+          <p style="margin:0 0 10px;">Two kids started the Huffle Helpers on the same street in Madeira. Cindy Sloane was one. Her best friend &mdash; maybe more &mdash; was <b>Chris Tanti</b>. They drew the Helpers' first logo together.</p>
+          <p style="margin:0 0 10px;">Then a Huffle took everything from him. A terrified stowaway in the engine room of his parents' anniversary cruise. It ballooned. The ship went down &mdash; and his mother and father with it. Killed by the gentlest creature on Earth, because it was <i>scared.</i></p>
+          <p style="margin:0 0 10px;">Cindy called it a tragedy. Chris called it a <i>verdict.</i> They were eighteen. They never spoke again.</p>
           <p style="font-size:24px;margin:14px 0 0;">Fourteen years later, Cindy runs HRUMF. <b style="color:var(--stamp-red)">And Chris runs the thing trying to destroy it.</b></p>
         </div>
       </div>
@@ -625,8 +675,8 @@
       <div class="window-body" style="height:726px;background:#e9e4d6;position:relative;font-family:'Courier New',monospace;color:#111;">
         <span class="stamp" style="top:18px;right:24px;font-size:26px;transform:rotate(-10deg);">LEAKED</span>
         <div class="doc-header" style="border-color:#7a1010;"><span>INTER-AGENCY &middot; CIA LIAISON COPY &middot; THE TRUTH BEHIND THE BRAND</span><span>EYES ONLY</span></div>
-        <p style="font-size:17px;margin:0 0 12px;">It's a front. Behind it, DOLOS <b>cages</b> Huffles, <b>experiments</b> on them, and <b>harvests</b> what makes them impossible &mdash; their immortality, their immunity to pain, their refusal to age &mdash; and sells it to billionaires who'd like to live forever.</p>
-        <p style="font-size:17px;margin:0 0 12px;">To keep the public from caring, DOLOS floods the world with <b>fake news</b> until people are too afraid of Huffles to ask what's happening to them. It works. The planet is split down the middle.</p>
+        <p style="font-size:17px;margin:0 0 12px;">It's a front. Behind it, DOLOS <b>cages</b> Huffles, <b>experiments</b> on them, and <b>harvests</b> what makes them impossible &mdash; immortality, immunity to pain, agelessness &mdash; to sell to billionaires who want to live forever.</p>
+        <p style="font-size:17px;margin:0 0 12px;">And it floods the world with <b>fake news</b>, so people stay too afraid of Huffles to ask what's happening to them. It works. The planet is split in half.</p>
         <div style="background:#fffef6;border:2px solid #111;padding:12px 14px;margin:8px 0;font-size:16px;">
           <span class="kicker" style="font-size:12px;color:var(--stamp-red);">GOVERNMENT ASSESSMENT &mdash; redacted</span><br>
           Biological yield deemed <span class="redacted">&nbsp;of strategic interest&nbsp;</span>. Oversight <span class="redacted">&nbsp;suspended&nbsp;</span> pending <span class="redacted">&nbsp;continued cooperation&nbsp;</span>. Subject org to remain <span class="redacted">&nbsp;operational&nbsp;</span>.
