@@ -1,0 +1,367 @@
+/* ============================================================
+   THE HUFFLES — Archive Deck
+   Custom layer on top of 98.css
+   Aesthetic: a sealed government "extinction archive" terminal,
+   unsealed in 2025 for the 25th anniversary of The Happening.
+   ============================================================ */
+
+@font-face {
+  font-family: "VT323";
+  src: url("vt323.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DotGothic";
+  src: url("dos.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  /* Win98 system */
+  --w98-grey: #c0c0c0;
+  --w98-grey-dk: #808080;
+  --w98-navy: #000080;       /* active title bar */
+  --w98-teal: #008080;       /* classic desktop */
+  --w98-teal-dk: #005f5f;
+
+  /* Archive / dossier accents */
+  --phosphor: #33ff66;       /* terminal green */
+  --phosphor-dim: #1a9e3f;
+  --amber: #ffb000;
+  --crt-bg: #050805;
+  --stamp-red: #b51c1c;
+  --hrumf-teal: #1a7a6e;
+  --dolos-slate: #2c3340;
+  --ink: #101010;
+  --paper: #f3efe2;          /* aged document */
+  --paper-edge: #d8d0bb;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Pixelated MS Sans Serif", Arial, sans-serif;
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+}
+
+/* ---------- Stage: fixed 1920x1080, scaled to viewport ---------- */
+#viewport {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+#stage {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: center center;
+  background: var(--w98-teal);
+  overflow: hidden;
+}
+
+/* ---------- Slides ---------- */
+.slide {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+.slide.active { display: block; }
+
+/* Desktop chrome backdrop (teal + wallpaper noise) */
+.slide[data-chrome="desktop"] { background: var(--w98-teal); }
+.slide[data-chrome="crt"],
+.slide[data-chrome="terminal"] { background: #000; }
+
+/* ---------- Persistent desktop furniture ---------- */
+.desktop-icons {
+  position: absolute;
+  top: 28px;
+  left: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  z-index: 5;
+}
+.desktop-icons .dicon {
+  width: 84px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.15;
+  text-shadow: 1px 1px 0 #00000099;
+  cursor: default;
+  user-select: none;
+}
+.desktop-icons .dicon img {
+  width: 44px;
+  height: 44px;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto 4px;
+}
+.desktop-icons .dicon span {
+  padding: 1px 3px;
+  display: inline-block;
+}
+
+/* ---------- Taskbar ---------- */
+.taskbar {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 40px;
+  background: var(--w98-grey);
+  border-top: 2px solid #ffffff;
+  box-shadow: inset 0 1px 0 #dfdfdf;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 6px;
+  z-index: 50;
+  font-size: 15px;
+}
+.taskbar .start-btn {
+  display: flex; align-items: center; gap: 6px;
+  font-weight: bold;
+  min-width: 92px;
+  height: 30px;
+  padding: 0 8px;
+}
+.taskbar .start-btn img { width: 22px; height: 22px; image-rendering: pixelated; }
+.taskbar .task-window {
+  height: 30px;
+  display: flex; align-items: center; gap: 8px;
+  padding: 0 12px;
+  min-width: 280px;
+  font-size: 14px;
+}
+.taskbar .task-window img { width: 18px; height: 18px; image-rendering: pixelated; }
+.taskbar .tray {
+  margin-left: auto;
+  display: flex; align-items: center; gap: 8px;
+  border: 1px solid var(--w98-grey-dk);
+  box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
+  height: 28px;
+  padding: 0 10px;
+}
+.taskbar .nav-group {
+  display: flex; align-items: center; gap: 4px;
+  margin-right: 6px;
+}
+.taskbar .nav-group button { height: 28px; min-width: 60px; font-size: 13px; }
+.taskbar .counter {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  letter-spacing: 1px;
+  min-width: 74px;
+  text-align: center;
+}
+.taskbar .clock {
+  font-size: 14px; min-width: 70px; text-align: center;
+}
+
+/* ============================================================
+   CRT / TERMINAL TREATMENT
+   ============================================================ */
+.crt {
+  position: absolute;
+  inset: 0;
+  background: var(--crt-bg);
+  color: var(--phosphor);
+  font-family: "VT323", monospace;
+  overflow: hidden;
+}
+.crt::before { /* scanlines */
+  content: "";
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0px,
+    rgba(0,0,0,0) 2px,
+    rgba(0,0,0,0.28) 3px,
+    rgba(0,0,0,0.28) 4px
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+.crt::after { /* vignette + glass */
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(120% 120% at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+  z-index: 4;
+}
+.crt-flicker { animation: flicker 6s infinite steps(60); }
+@keyframes flicker { 0%,97%{opacity:1} 98%{opacity:.86} 99%{opacity:.97} 100%{opacity:1} }
+
+.crt .term {
+  position: relative;
+  z-index: 2;
+  padding: 60px 80px;
+  font-size: 30px;
+  line-height: 1.35;
+  text-shadow: 0 0 6px rgba(51,255,102,0.55);
+}
+.crt .term.small { font-size: 24px; }
+.crt .amber { color: var(--amber); text-shadow: 0 0 6px rgba(255,176,0,.5); }
+.crt .red { color: #ff4d4d; text-shadow: 0 0 6px rgba(255,60,60,.5); }
+.crt .dim { color: var(--phosphor-dim); }
+.crt .blink { animation: blink 1s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* terminal data rows */
+.term-rows { display: grid; grid-template-columns: 360px 1fr; row-gap: 6px; column-gap: 24px; }
+.term-rows .k { color: var(--phosphor-dim); }
+
+/* progress bar (terminal) */
+.term-progress {
+  margin: 14px 0;
+  width: 620px; height: 26px;
+  border: 2px solid var(--phosphor-dim);
+  padding: 3px;
+}
+.term-progress > i {
+  display: block; height: 100%;
+  background: repeating-linear-gradient(90deg, var(--phosphor) 0 16px, transparent 16px 20px);
+}
+
+/* ============================================================
+   WINDOWS (98.css .window) — deck sizing helpers
+   ============================================================ */
+.win {
+  position: absolute;
+  box-shadow: 3px 3px 0 rgba(0,0,0,.35);
+}
+.win .title-bar { height: 26px; font-size: 15px; }
+.win .title-bar-text { font-size: 15px; }
+.win .title-bar-controls button { min-width: 22px; height: 20px; }
+.win .window-body { font-size: 16px; line-height: 1.4; }
+
+/* Red "alert" title bar variant */
+.title-bar.alert {
+  background: linear-gradient(90deg, var(--stamp-red), #7a1010);
+}
+
+/* Window menu strip */
+.menu-strip {
+  display: flex; gap: 18px;
+  padding: 2px 8px;
+  font-size: 15px;
+  border-bottom: 1px solid var(--w98-grey-dk);
+}
+.menu-strip u { text-decoration: underline; }
+
+/* Status bar cells */
+.statusbar { display: flex; gap: 4px; margin-top: 6px; }
+.statusbar .field { font-size: 13px; }
+
+/* ============================================================
+   DOSSIER / DOCUMENT CONTENT
+   ============================================================ */
+.doc {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--paper-edge);
+  padding: 28px 32px;
+  font-family: "Courier New", monospace;
+  position: relative;
+}
+.doc h1, .doc h2 { font-family: "Pixelated MS Sans Serif", Arial; }
+.doc-header {
+  font-family: "Courier New", monospace;
+  font-size: 14px; letter-spacing: 1px;
+  color: #444;
+  border-bottom: 2px solid #222;
+  padding-bottom: 6px; margin-bottom: 16px;
+  display: flex; justify-content: space-between; gap: 24px;
+}
+.doc-footer {
+  font-family: "Courier New", monospace;
+  font-size: 12px; color: #666;
+  border-top: 1px solid #999;
+  margin-top: 18px; padding-top: 6px;
+  display: flex; justify-content: space-between;
+}
+.kv { display: grid; grid-template-columns: 150px 1fr; row-gap: 4px; font-size: 15px; }
+.kv .k { color: #555; text-transform: uppercase; letter-spacing: .5px; }
+
+/* Stamps */
+.stamp {
+  position: absolute;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  font-weight: bold;
+  border: 4px solid var(--stamp-red);
+  color: var(--stamp-red);
+  padding: 6px 18px;
+  font-size: 38px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transform: rotate(-12deg);
+  opacity: .82;
+  border-radius: 4px;
+  text-shadow: 0 0 1px #fff;
+  pointer-events: none;
+}
+.stamp.small { font-size: 22px; border-width: 3px; padding: 3px 10px; }
+.stamp.green { color: var(--hrumf-teal); border-color: var(--hrumf-teal); }
+.stamp.black { color: #111; border-color: #111; }
+.stamp.blue  { color: var(--w98-navy); border-color: var(--w98-navy); }
+
+/* ============================================================
+   PLACEHOLDER WELLS — intentional, never look broken
+   ============================================================ */
+.ph {
+  position: relative;
+  background:
+    repeating-linear-gradient(45deg, #d9d4c4 0 12px, #cfc9b6 12px 24px);
+  border: 2px inset #fff;
+  box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #fff;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  color: #3a3a3a;
+  font-family: "Courier New", monospace;
+  overflow: hidden;
+}
+.ph .ph-ico { width: 40px; height: 40px; image-rendering: pixelated; opacity: .8; margin-bottom: 8px; }
+.ph .ph-label { font-size: 14px; font-weight: bold; letter-spacing: .5px; text-transform: uppercase; }
+.ph .ph-sub { font-size: 12px; color: #6a6a6a; margin-top: 4px; max-width: 86%; }
+.ph .ph-dims { position: absolute; bottom: 4px; right: 6px; font-size: 11px; color: #7a7a7a; }
+.ph.dark {
+  background: repeating-linear-gradient(45deg, #161616 0 12px, #1d1d1d 12px 24px);
+  color: var(--phosphor-dim);
+  border-color: #333;
+}
+.ph.dark .ph-sub { color: var(--phosphor-dim); }
+/* video well: black with play glyph */
+.ph.video {
+  background:#000; color:#7d7d7d; border:2px inset #808080;
+}
+.ph.video .ph-ico { opacity:.9; }
+
+/* ============================================================
+   TITLE / WORDMARK
+   ============================================================ */
+.wordmark {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: var(--phosphor);
+  text-shadow: 0 0 14px rgba(51,255,102,.6), 3px 3px 0 #0a3d1c;
+}
+
+/* Utility */
+.center-col { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; }
+.redacted { background:#111; color:#111; padding:0 4px; }
+.kicker { font-family:"Courier New",monospace; letter-spacing:2px; text-transform:uppercase; }
+.flex { display:flex; }
+.col { display:flex; flex-direction:column; }
