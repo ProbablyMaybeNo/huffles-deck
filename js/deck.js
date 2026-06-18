@@ -81,9 +81,10 @@
     else if (e.key === "End") { show(slides.length - 1); }
   });
 
+  // click anywhere to advance; click the Prev control (or anything marked prev) to go back
   document.addEventListener("click", (e) => {
-    if (e.target.closest("[data-nav='next']")) next();
-    else if (e.target.closest("[data-nav='prev']")) prev();
+    if (e.target.closest("[data-nav='prev']")) prev();
+    else next();
   });
 
   // in-world clock — frozen-ish archive time, ticks for life
