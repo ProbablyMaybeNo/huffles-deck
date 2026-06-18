@@ -63,6 +63,12 @@
   function show(n) {
     i = Math.max(0, Math.min(slides.length - 1, n));
     slides.forEach((s, k) => s.classList.toggle("active", k === i));
+    // restart entrance animations on the slide we're landing on
+    if (!document.body.classList.contains("static")) {
+      slides[i].querySelectorAll(".anim-line,.anim-beat,.crt-on").forEach((el) => {
+        el.style.animationName = "none"; void el.offsetWidth; el.style.animationName = "";
+      });
+    }
     document.querySelectorAll(".counter").forEach(c => {
       c.textContent = String(i + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0");
     });

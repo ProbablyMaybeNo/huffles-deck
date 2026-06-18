@@ -12,18 +12,30 @@
 - Title: **THE HUFFLES** · Subtitle: *An adorably odd universe — on record since the day it arrived.*
 - Footer: `CLASSIFIED 2000 · LEAKED BY HRUMF 2025 · 25 YEARS OF THE HAPPENING` · `PRESENTED BY ROSS HILARY`
 
-## 2 · THE HAPPENING *(hook — terminal + found footage, merged)*
-- **U.N. COMMITTEE ON GLOBAL MASS EXTINCTION** · `SYSTEM BOOT… / GOVERNMENT ARCHIVE TERMINAL #001 — SECURITY CHECK`
-- `INITIALIZING NETWORK…` · `CONFIDENTIAL — LEVEL 5 CLEARANCE REQUIRED` · `MASS EXTINCTION PROTOCOL [ ENABLED ]`
-- THE HUFFLES → INTER-DIMENSIONAL/EXTRATERRESTRIAL · CLASSIFICATION: INVASION (UNARMED) · EVENT: THE HAPPENING · FIRST CONTACT: 2000, WORLDWIDE
-- GLOBAL CONTAINMENT 05% · SURVIVAL CALC 07% · CIVILIZATION THREAT [COLLAPSE IMMINENT]
-- Found-footage player: EXHIBIT 01 — NEWS_BREAKING_2000.avi (+ CCTV_GASMART_0314 · CITIZEN_PHONE_DRIVEWAY · SUBWAY_TUNNEL_CAM · FREEZER_AISLE_0207)
-- Punchline: *The apocalypse, it turned out, was adorable.*
+## 2 · BOOT SEQUENCE *(the archive powers on — animated, types out)*
+- **INTERNATIONAL COMMITTEE ON GLOBAL MASS EXTINCTION**
+- `> SYSTEM BOOT…` / `> ARCTIC WORLD ARCHIVE — SPITSBERGEN ISLAND, SVALBARD, NORWAY` / `> NETWORK INITIALIZING… loading`
+- `> COLLECTIVE MEMORY VAULT — TERMINAL 001 — INITIALIZING` / `> PROJECT KNOWLEDGE ARK — CLASSIFIED: TOP SECRET` / `> SECURITY SYSTEMS — DISENGAGED`
+- TERMINAL LOG:
+  - MASS EXTINCTION PROTOCOL — ENGAGED 2001
+  - LEVEL 1 / 2 / 3 / 4 — PASSED
+  - SAVE OUR SOULS PROTOCOL — INITIATED — PASSED
+  - EXODUS PROTOCOL — SUBTERRANEAN ARKS — ARK 1 SEALED / **ARK 2 FAILED** / ARK 3 SEALED / ARK 4 SEALED
+  - LAST DAYS COUNTDOWN BEGINS… 5·4·3·2·1
+  - LAST DAYS — ABORTED 01.01.2018 · SOS PROTOCOL — ABORTED 01.01.2021 · MASS EXTINCTION PROTOCOL — LEVEL 5 — DISENGAGED 01.01.2025
+- `> TERMINAL STATUS — ACTIVE · TOP SECRET CLEARANCE — REMOVED`
+- `> SYSTEM BOOT SUCCESSFUL… LOADING KNOWLEDGE ARK ▮`
 
-## 3 · ACCESS LOGON
-- WARNING: ACCESS RESTRICTED · CONFIDENTIAL: property of the U.N. Committee on Global Mass Extinction. Unlawful access is a federal offense.
-- Curator: ROSS HILARY · `✓ HRUMF MIRROR OPEN · PUBLIC ACCESS · 2025`
-- (2nd window) HRUMF_LEAK — mirroring 25 years of classified files to public net… · 3,114 items · 11 dossiers · 6 video exhibits
+## 3 · TERMINAL WELCOME + narration *(animated, beats reveal over footage)*
+- `> SECURITY ACCESS — GRANTED` / `> WELCOME TO THE COLLECTIVE MEMORY VAULT — TERMINAL 001` / `> DECLASSIFICATION DETECTED`
+- SUBJECT: THE HAPPENING (2000) · CLASSIFICATION: MASS EXTINCTION EVENT · CAUSE: CONTACT WITH INTER-DIMENSIONAL BEINGS · OUTCOME: **SURVIVAL**
+- *Narration (reveals beat by beat, over archive footage):*
+  - Twenty-five years ago today marks the beginning of the darkest period in human history — a line drawn across all of time. A before, and an after.
+  - It began without warning. Across the globe, inter-dimensional beings materialized from thin air. At first, we welcomed them — celebrating in the streets.
+  - Then they kept coming. Millions of them — clogging transport routes, downing power grids, toppling cell towers. The world's governments united, and it was too little, too late. Nothing could stop the flood.
+  - Within a year the global economy was in free fall — fuel shortages, mass unemployment, famine, civil unrest. Millennia of civilization brought to the brink. Not by war, not by plague, not by any disaster we'd ever feared.
+  - But by something far more shocking…
+  - **THE HUFFLES.**
 
 ## 4 · WHAT IS A HUFFLE (biology)
 - `HRUMF · SEEKER DIVISION · PUBLIC BIOLOGICAL BRIEF 04-A`

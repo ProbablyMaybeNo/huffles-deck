@@ -9,13 +9,13 @@
 **Text:** THE HUFFLES — *An adorably odd universe, on record since the day it arrived.* · CLASSIFIED 2000 · LEAKED BY HRUMF 2025 · 25 YEARS OF THE HAPPENING.
 **Assets:** ✅ None — full CRT terminal screen. *(Optional: faint CRT desktop wallpaper.)*
 
-## 2 · THE HAPPENING *(hook)*
-**Text:** Mass Extinction Protocol readout — Classification: INVASION (UNARMED), First Contact 2000, threat COLLAPSE IMMINENT. → **The apocalypse, it turned out, was adorable.**
-**Assets:** **1 video** — found-footage montage (2000 news / CCTV / citizen phone clips → silence on a Huffle close-up). Slot **756×432**.
+## 2 · BOOT SEQUENCE *(the archive powers on)*
+**Text:** Animated terminal boot log — Arctic World Archive / Knowledge Ark / Mass Extinction, SOS, Exodus (subterranean arks) + the climb-down dates (Last Days aborted 2018, disengaged 2025) → "SYSTEM BOOT SUCCESSFUL… LOADING KNOWLEDGE ARK".
+**Assets:** ✅ None — vintage terminal boot text on black, types out line by line.
 
-## 3 · ACCESS LOGON
-**Text:** WARNING: ACCESS RESTRICTED · property of the U.N. Committee on Global Mass Extinction · ✓ HRUMF MIRROR OPEN · PUBLIC ACCESS 2025.
-**Assets:** ✅ None — Win98 dialog + desktop.
+## 3 · TERMINAL WELCOME + narration *(over footage)*
+**Text:** Declassification welcome + data card (OUTCOME: SURVIVAL), then the cold-open narration revealing beat by beat → **THE HUFFLES.**
+**Assets:** **1 video** — archive footage of the early Happening (news broadcasts, protests, fuel queues, famine, empty cities, citizen phone clips), AI narration over the top. Slot **736×470**. *(This is where your in-world video lives.)*
 
 ## 4 · WHAT IS A HUFFLE *(biology)*
 **Text:** Indestructible · ageless · doesn't eat (feeds on belonging) · emotional body. Loved = calm, alone = not. **A world that mistreats its Huffles makes *more* Huffles.**

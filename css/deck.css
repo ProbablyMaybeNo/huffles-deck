@@ -366,6 +366,34 @@ html, body {
   text-shadow: 0 0 14px rgba(51,255,102,.6), 3px 3px 0 #0a3d1c;
 }
 
+/* ============================================================
+   ANIMATION (interactive deck only — exports add .static to disable)
+   ============================================================ */
+@keyframes lineIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+@keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+@keyframes crtOn {
+  0%   { opacity:0; transform:scaleY(.003); filter:brightness(6); }
+  45%  { opacity:1; transform:scaleY(.003); filter:brightness(6); }
+  60%  { transform:scaleY(1); filter:brightness(2); }
+  100% { opacity:1; transform:none; filter:none; }
+}
+.anim-line {
+  opacity:1;
+  animation-name:lineIn; animation-duration:.32s; animation-fill-mode:both; animation-timing-function:steps(4,end);
+  animation-delay: calc(var(--i,0) * .085s);
+}
+.anim-beat {
+  opacity:1;
+  animation-name:fadeUp; animation-duration:.6s; animation-fill-mode:both; animation-timing-function:ease-out;
+  animation-delay: calc(var(--i,0) * .55s);
+}
+.crt-on { transform-origin:center; animation:crtOn 1s ease-out both; }
+/* exports / static capture: kill all motion, show final state */
+.static .anim-line, .static .anim-beat, .static .crt-on,
+.static .crt-flicker, .static .blink {
+  animation: none !important; opacity: 1 !important; transform: none !important;
+}
+
 /* Utility */
 .center-col { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; }
 .redacted { background:#111; color:#111; padding:0 4px; }
