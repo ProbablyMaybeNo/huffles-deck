@@ -95,7 +95,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  z-index: 5;
+  z-index: 1;
 }
 .desktop-icons .dicon {
   width: 84px;
@@ -245,6 +245,7 @@ html, body {
 .win {
   position: absolute;
   box-shadow: 3px 3px 0 rgba(0,0,0,.35);
+  z-index: 10;
 }
 .win .title-bar { height: 26px; font-size: 15px; }
 .win .title-bar-text { font-size: 15px; }
