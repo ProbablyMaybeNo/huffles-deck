@@ -11,7 +11,7 @@
     const sx = viewport.clientWidth / 1920;
     const sy = viewport.clientHeight / 1080;
     const s = Math.min(sx, sy);
-    stage.style.transform = `scale(${s})`;
+    stage.style.transform = `translate(-50%, -50%) scale(${s})`;
   }
   window.addEventListener("resize", fit);
   fit();
@@ -79,6 +79,14 @@
         el.style.animationName = "none"; void el.offsetWidth; el.style.animationName = "";
       });
     }
+    // media: pause/rewind everything, then autoplay the active slide's media
+    if (window.__players) {
+      window.__players.forEach((m) => { try { m.pause(); m.currentTime = 0; } catch (e) {} });
+      if (!document.body.classList.contains("static")) {
+        const m = slides[i].querySelector(".media-player audio, .media-player video");
+        if (m) m.play().catch(() => {});
+      }
+    }
     document.querySelectorAll(".counter").forEach(c => {
       c.textContent = String(i + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0");
     });
@@ -97,11 +105,49 @@
     else if (e.key === "End") { show(slides.length - 1); }
   });
 
-  // click anywhere to advance; click the Prev control (or anything marked prev) to go back
+  // click anywhere to advance; clicks inside a media player don't advance
   document.addEventListener("click", (e) => {
+    if (e.target.closest("[data-noadvance]")) return;
     if (e.target.closest("[data-nav='prev']")) prev();
     else next();
   });
+
+  // ---- functional media players ----
+  function fmtTime(t) {
+    if (!isFinite(t)) return "--:--";
+    const m = Math.floor(t / 60), s = Math.floor(t % 60);
+    return m + ":" + String(s).padStart(2, "0");
+  }
+  const players = [];
+  document.querySelectorAll(".media-player").forEach((p) => {
+    const media = p.querySelector("audio,video");
+    if (!media) return;
+    const btn = p.querySelector(".btn-play");
+    const stop = p.querySelector(".btn-stop");
+    const timeEl = p.querySelector(".pp-time");
+    const bar = p.querySelector(".pp-bar > i");
+    const screen = p.querySelector(".pp-screen");
+    const glyph = () => { if (btn) btn.innerHTML = media.paused ? "&#9654;" : "&#10073;&#10073;"; };
+    const toggle = (e) => { if (e) e.stopPropagation(); if (media.paused) media.play().catch(() => {}); else media.pause(); };
+    if (btn) btn.addEventListener("click", toggle);
+    if (media.tagName === "VIDEO") media.addEventListener("click", toggle);
+    if (stop) stop.addEventListener("click", (e) => { e.stopPropagation(); media.pause(); media.currentTime = 0; });
+    media.addEventListener("play", () => { p.classList.add("playing"); glyph(); });
+    media.addEventListener("pause", () => { p.classList.remove("playing"); glyph(); });
+    media.addEventListener("ended", () => { p.classList.remove("playing"); glyph(); });
+    media.addEventListener("timeupdate", () => {
+      if (timeEl) timeEl.textContent = fmtTime(media.currentTime) + " / " + fmtTime(media.duration);
+      if (bar && media.duration) bar.style.width = (media.currentTime / media.duration * 100) + "%";
+    });
+    media.addEventListener("loadedmetadata", () => {
+      if (screen) screen.classList.add("has-media");
+      if (timeEl) timeEl.textContent = fmtTime(0) + " / " + fmtTime(media.duration);
+    });
+    media.addEventListener("error", () => { if (screen) screen.classList.remove("has-media"); });
+    glyph();
+    players.push(media);
+  });
+  window.__players = players;
 
   // in-world clock — frozen-ish archive time, ticks for life
   function tick() {

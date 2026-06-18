@@ -84,20 +84,25 @@
         <div class="anim-line dim" style="--i:3;margin-top:6px;border-top:1px solid var(--phosphor-dim);padding-top:8px;">SUBJECT: THE HAPPENING (2000) &nbsp;&middot;&nbsp; CLASSIFICATION: MASS EXTINCTION EVENT &nbsp;&middot;&nbsp; CAUSE: CONTACT WITH INTER-DIMENSIONAL BEINGS &nbsp;&middot;&nbsp; OUTCOME: <span class="amber">SURVIVAL</span></div>
       </div>
 
-      <!-- footage well -->
-      <div style="position:absolute;top:276px;left:80px;width:740px;z-index:5;">
+      <!-- footage well (functional video player) -->
+      <div class="media-player" data-noadvance style="position:absolute;top:276px;left:80px;width:740px;z-index:5;">
         <div style="border:2px solid var(--phosphor-dim);background:#000;box-shadow:0 0 18px rgba(51,255,102,.12);">
           <div style="display:flex;align-items:center;gap:8px;padding:5px 10px;background:#08240f;border-bottom:1px solid var(--phosphor-dim);font-family:'VT323';font-size:18px;color:var(--phosphor);">
             <img src="assets/icons/video.png" style="width:16px;height:16px;image-rendering:pixelated" alt=""> ARCHIVE FOOTAGE &mdash; THE HAPPENING
           </div>
-          <div class="ph dark" style="width:100%;height:470px;border:none;box-shadow:none;">
-            <img class="ph-ico" src="assets/icons/video.png" alt="">
-            <div class="ph-label" style="color:var(--phosphor)">EARLY DAYS OF THE HAPPENING</div>
-            <div class="ph-sub">News broadcasts, protests, fuel queues, famine, empty cities &mdash; cut against citizen phone footage. (AI narration over.)</div>
-            <div class="ph-dims">736 &times; 470</div>
+          <div class="pp-screen" style="width:100%;height:470px;">
+            <video src="assets/media/03-happening.mp4" preload="metadata" playsinline></video>
+            <div class="ph dark" style="width:100%;height:100%;border:none;box-shadow:none;">
+              <img class="ph-ico" src="assets/icons/video.png" alt="">
+              <div class="ph-label" style="color:var(--phosphor)">EARLY DAYS OF THE HAPPENING</div>
+              <div class="ph-sub">News broadcasts, protests, fuel queues, famine, empty cities &mdash; cut against citizen phone footage. (AI narration over.)</div>
+              <div class="ph-dims">drop assets/media/03-happening.mp4</div>
+            </div>
           </div>
-          <div style="display:flex;gap:10px;align-items:center;padding:8px 10px;background:#08240f;font-family:'VT323';font-size:18px;color:var(--phosphor);">
-            <span>&#9654;</span><span>&#10073;&#10073;</span><span>&#9632;</span><span style="flex:1;height:8px;border:1px solid var(--phosphor-dim);"></span><span>00:00 / 03:00</span>
+          <div style="display:flex;gap:12px;align-items:center;padding:8px 10px;background:#08240f;font-family:'VT323';font-size:20px;color:var(--phosphor);">
+            <span class="tx ctl btn-play">&#9654;</span><span class="tx ctl btn-stop">&#9632;</span>
+            <div class="pp-bar" style="flex:1;"><i></i></div>
+            <span class="pp-time" style="min-width:120px;text-align:right;">--:-- / --:--</span>
           </div>
         </div>
       </div>

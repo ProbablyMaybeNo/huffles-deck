@@ -55,16 +55,17 @@ html, body {
 #viewport {
   position: fixed;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   background: #000;
 }
 #stage {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 1920px;
   height: 1080px;
   transform-origin: center center;
+  transform: translate(-50%, -50%) scale(1);
   background: var(--w98-teal);
   overflow: hidden;
 }
@@ -399,9 +400,21 @@ html, body {
 .wf-player .tx { color:var(--phosphor); font-family:'VT323',monospace; font-size:22px; }
 .waveform { flex:1; display:flex; align-items:center; gap:2px; height:46px; }
 .waveform i { flex:1; min-width:2px; background:var(--phosphor); box-shadow:0 0 4px rgba(51,255,102,.5);
-  transform-origin:center; animation:wave 1s ease-in-out infinite alternate; animation-delay:calc(var(--i,0) * -.07s); }
+  transform-origin:center; transform:scaleY(.5); }
+/* bars only pulse while the player is actually playing */
+.media-player.playing .waveform i { animation:wave 1s ease-in-out infinite alternate; animation-delay:calc(var(--i,0) * -.07s); }
 @keyframes wave { from{transform:scaleY(.28)} to{transform:scaleY(1)} }
 .static .waveform i { animation:none !important; }
+
+/* ---- functional media players (in-world chrome over real <audio>/<video>) ---- */
+.media-player .tx, .media-player .ctl { cursor:pointer; user-select:none; }
+.media-player .ctl:hover { color:#fff; }
+.pp-screen { position:relative; overflow:hidden; }
+.pp-screen video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; background:#000; display:none; }
+.pp-screen.has-media > video { display:block; }
+.pp-screen.has-media > .ph { visibility:hidden; }
+.pp-bar { position:relative; height:10px; background:#0a1f0a; border:1px solid var(--phosphor-dim); }
+.pp-bar > i { position:absolute; left:0; top:0; bottom:0; width:0%; background:var(--phosphor); box-shadow:0 0 6px rgba(51,255,102,.6); }
 
 /* ---- Process card (biology) ---- */
 .proc { display:flex; flex-direction:column; background:#fff; border:1px solid #c2bba6; box-shadow:2px 2px 0 #00000010; }
