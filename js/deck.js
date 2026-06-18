@@ -57,6 +57,16 @@
     if (!s.querySelector(".taskbar")) s.appendChild(taskbar());
   });
 
+  // build voice-log waveforms
+  document.querySelectorAll(".waveform").forEach((wf) => {
+    let html = "";
+    for (let k = 0; k < 56; k++) {
+      const h = 22 + Math.round(Math.abs(Math.sin(k * 0.6) + Math.sin(k * 0.27)) * 40);
+      html += `<i style="height:${Math.min(100, h)}%;--i:${k % 14}"></i>`;
+    }
+    wf.innerHTML = html;
+  });
+
   const slides = Array.from(document.querySelectorAll(".slide"));
   let i = 0;
 
